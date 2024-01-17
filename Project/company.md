@@ -16,6 +16,8 @@ A speaker that is long lasting, durable, and elegant.
   
 ![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/669c62f2-5ff3-47bb-b2ce-4db9588e3dde)
 
+<sub> This speaker is actually the Willen speaker made by the Marshall audiotech company. We will develop our own speakers soon.</sub>
+
 Have an existing prototype on hand
 
 ## What kind of developper we are looking for
