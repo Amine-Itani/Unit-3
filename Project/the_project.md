@@ -1,6 +1,6 @@
 ![11e470e9022f4fc5b367429bcbb285bc](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/1d14b1d3-ae39-4ef3-8ec9-3329630eacae)
 
-# Unit 2: A Distributed Weather Station for ISAK
+# Unit 3: A Clothing Factory GUI
 
 ## Criteria A: Planning
 
