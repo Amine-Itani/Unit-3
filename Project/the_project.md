@@ -25,9 +25,12 @@ The client is the manager of a clothes making factory that produces shirts in th
 
 # Criteria B: Design
 
-## UML Diagram 
+## Wireframe Diagram
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/3f41eb43-509e-4f1e-96bc-3391c2fe191d)
 
-**Fig.1**
+<sub>**Fig.1** Figure shows the wireframe diagram of the application</sub>
+
+## UML Diagram 
 
 
 **Fig.2** 
