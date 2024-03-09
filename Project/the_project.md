@@ -33,8 +33,19 @@ The client is the manager of a clothes making factory that produces shirts in th
 ## UML Diagram 
 
 
-**Fig.2** 
+<sub>**Fig.2** </sub>
 
+## Flow Diagrams
+### Simple
+
+<sub>**Fig.3** </sub>
+### Medium
+
+<sub>**Fig.4** </sub>
+### Registration Precodure (Complex)
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/1b53ef2b-d05f-403e-8067-47f9f0b6c54f)
+
+<sub>**Fig.5** Figure shows complex flow diagram</sub>
 
 ## Record of Tasks
 | Task No | Planned Action                                                | Planned Outcome                                                                                                 | Time estimate | Target completion date | Criterion |
