@@ -39,7 +39,8 @@ The client is the manager of a clothes making factory that produces shirts in th
 ### Simple
 
 <sub>**Fig.3** </sub>
-### Medium
+### Uploading New Shipment (Medium)
+
 
 <sub>**Fig.4** </sub>
 ### Registration Precodure (Complex)
