@@ -135,7 +135,7 @@ The function takes the given username, password, password retype (check), and hi
 - OOP paradigm
 - KivyMD
 - SQLite/Relational Databases
-- Hashing
+- Hashing (“Passlib.” PyPI, pypi.org/project/passlib/. Accessed 11 Mar. 2024. )
 - For loops
 - If statements
 - Boolean logic
@@ -197,6 +197,24 @@ Although a simple function, it is critical to solve client problems. Due to thei
 <sub>comments replace unecessary code</sub>
 
 This function takes in a new shipment, which requires recording in three different databases: balance, transactions, and shipments. It also checks if the shipment is possible in the first place or if the inventory is lacking. The function does this by breaking down the incoming information from KivyMD into variables, then taking the amount of the existing inventory of the requested item by using a database search where item is user given item. It then compares the existing item amount with the requested amounts, and if the latter is bigger it will raise an error. If that is not the case, then the procedur will continue. The money database will update by searching for the current money and updating that variable with the current money in addition to the one saved in the variable before. The same happens with the amount of shirts, and the full variable chain is inserted through another query into the shipments log database.
+
+### Add Table
+'''.py
+    def on_pre_enter(self, *args):
+        # before the screen in shown, the code runs
+        self.data_table = MDDataTable(
+            size_hint=(.2, .35),
+            pos_hint={"center_x": .4, "center_y": .47},
+            column_data=[("Item", 35),
+                        ("Amount", 30)]
+        )
+        # add the table
+        self.data_table.bind(on_row_press=self.row_pressed)
+        self.data_table.bind(on_check_press=self.check_pressed)
+        self.add_widget(self.data_table)
+        self.show()
+'''
+This function is executed on pre enter. What that means is right before the user is about to press the button to activate the function (in this case load the code), the functino will activate. This function adds a table to any of the pages where that is used, here the inventory page, but it has been used multiple times. It's size is set at 20% width of the parent and 35% height of the parent, and it's center position at 40 % x of parent's and at 47% y of parent's. The column data is defined as 35 pixels wide for Item and 30 pixels wide for Amount. We then bind the row and checks to print statemtents defined later for assurance and add the widget through the imported add_widget function. We then show the data on the table, which is just a select query from the appropriate table
 
 # Criteria D: Functionality
 https://drive.google.com/drive/folders/1AqxZBVOQDglBhOh8aPGSFg3OY21M7LC6?usp=drive_link 
