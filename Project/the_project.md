@@ -26,6 +26,9 @@ The client is the manager of a clothes making factory that produces luxury shirt
 # Criteria B: Design
 
 ## System Diagram
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/5eefe328-d4fd-4c5a-a193-903d7743ff51)
+
+The system diagram displays the hardware that is needed to run the application, using Python version 3.10.11 and Kivy version 2.3.0. It discusses necessary parts such as RAM, CPU, Operating System, etc.
 
 <sub>**Fig. 1** Figure shows the system diagram of the application</sub>
 
@@ -37,11 +40,14 @@ This diagram is the wireframe diagram of the application. It shows how different
 <sub>**Fig. 2** Figure shows the wireframe diagram of the application</sub>
 
 ## ER Diagram
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/8c754753-bd9f-4dcf-8402-544293744750)
+
+This diagram shows the relationship between the different entities (databases) that are used by the program. Since all the users have access and the same relation to the databases, this creates many to many relationships. The only exception is the money database, since all the users only deal with one balance, which is that of the factory's capital.
 
 <sub>**Fig. 3** Figure shows the entity relationship diagram of the application</sub>
 
 ## UML Diagram 
-![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/04baecc1-d71f-40c9-84d0-ca05329cbe02)
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/b10bbd21-a341-4d5b-8971-c1e388e7b12a)
 
 The diagram is the UML diagram for the OOP classes and methods used in this program. Most of the classes inherit from the imported class MDScreen, and the general program to run the application from MDApp. DatabaseBridge is the connection between the program and the sqlite databases.
 
