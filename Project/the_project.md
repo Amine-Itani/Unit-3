@@ -31,9 +31,9 @@ The client is the manager of a clothes making factory that produces luxury shirt
 <sub>**Fig.1** Figure shows the wireframe diagram of the application</sub>
 
 ## UML Diagram 
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/04baecc1-d71f-40c9-84d0-ca05329cbe02)
 
-
-<sub>**Fig.2** </sub>
+<sub>**Fig.2** Figure shows the UML Diagram of the program</sub>
 
 ## Flow Diagrams
 
