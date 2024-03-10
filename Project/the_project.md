@@ -11,9 +11,9 @@ The client is the manager of a clothes making factory that produces luxury shirt
 
 ## Proposed Solution
 
-**Design statement**
+### Design statement
 
-``` Fill out here```
+
 
 ## Success Criteria
 1. A page that keeps track of how much money the client has (Issue Tackled: "forget how much money he has")
