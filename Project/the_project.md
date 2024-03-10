@@ -1,5 +1,5 @@
-![11e470e9022f4fc5b367429bcbb285bc](https://github.com/comsci-uwc-isak/unit2_2023/assets/53995212/1d14b1d3-ae39-4ef3-8ec9-3329630eacae)
-
+![luxuryclothes](https://github.com/Amine-Itani/Unit-3/assets/123438294/c42364ea-9db9-444d-bfac-ac329e160a58)
+<sub> Image shows picture taken from https://en.freejpg.com.ar/stockphotos/premium/831656828/luxury-clothing-store-for-men </sub>
 # Unit 3: A Clothing Factory GUI
 
 ## Criteria A: Planning
