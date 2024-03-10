@@ -132,8 +132,71 @@ The function takes the given username, password, password retype (check), and hi
 
 ## List of techniques used
 
-## Development
+- OOP paradigm
+- KivyMD
+- SQLite/Relational Databases
+- Hashing
+- For loops
+- If statements
+- Boolean logic
 
+## Development
+### Try Login
+```.py
+    def try_login(self):
+        meet_req = False
+        username = self.ids.uname.text
+        password = self.ids.pword.text
+        query = f"""SELECT username, password from users where username = '{username}'"""
+        table_username = db.search(query, multiple=False)
+        meet_req = check_password(table_username[1], password)
+        if meet_req == True:
+            self.parent.current = "Menu"
+        else:
+            print("Error. No login info")
+```
+This function is a login function that will only switch parent.current to menu (move forward to menu) if the username given already exists in the database and the password it is associated with matches the one in the database. It does this by running a query that looks for the username and password in the users database where the username is equal to that given by the user. It then checks the password associated to that given. It uses boolean logic in the sense that if either of these conditions are not met, a meet requirement variable is set to false and an if statements blocks procedure unless that requirement is set to true by the algorithm in both matching cases.
+
+### Get Hint
+```.py
+    def give_hint(self):
+        username = self.ids.uname.text
+        hint = db.search(f"""SELECT hint from users where username = '{username}'""", multiple=False)
+        self.ids.hinto.opacity = 100
+        self.ids.hinto.text = f"Hint: {hint[0]}"
+```
+Although a simple function, it is critical to solve client problems. Due to their short term memory loss, they often forget their password. This function returns a hint entered upon registration by taking it from the database. It does this through a database search where it gets the associated hint with the username given then sets the text of a small MDLabel in the top of the screen to that hint. It then increase the opacity from 0 to 100 so that the user may only see it upon request.
+
+### New shipment update
+```.py
+    def update(self):
+        self.ids.amount.error = False
+        db = DatabaseBridge('dylanclothes2.db')
+        name = self.ids.customer_name.text
+        amount = self.ids.amount.text
+        item = self.ids.request.text
+        earning = self.ids.earning.text
+        shirts = db.search(query= f"SELECT amount from products where item = '{item}'", multiple=False)
+        new_shirts = shirts[0] - int(amount)
+        if new_shirts < 0:
+            self.ids.amount.error = True
+        else:
+            db.insert(insert_query=f"""INSERT into shipments (name, amount, items, earning)
+                                           values ('{name}','{amount}','{item}','{earning}')""")
+           # reset text fields
+            self.show()
+            db.run_query(query=f"Update products set amount = {new_shirts} where item = '{item}'")
+            money1 = db.search(query= "SELECT amount from money", multiple=False)
+            new_earning = int(earning)
+            new_money = money1[0] + new_earning
+            db.run_query(query= f"Update money set amount = {new_money} where id = 1")
+            db.insert(insert_query=f"""insert into transactions (amount, type, date)
+                                    values ({new_earning}, 'earn', date())""")
+        db.close()
+```
+<sub>comments replace unecessary code</sub>
+
+This function takes in a new shipment, which requires recording in three different databases: balance, transactions, and shipments. It also checks if the shipment is possible in the first place or if the inventory is lacking. The function does this by breaking down the incoming information from KivyMD into variables, then taking the amount of the existing inventory of the requested item by using a database search where item is user given item. It then compares the existing item amount with the requested amounts, and if the latter is bigger it will raise an error. If that is not the case, then the procedur will continue. The money database will update by searching for the current money and updating that variable with the current money in addition to the one saved in the variable before. The same happens with the amount of shirts, and the full variable chain is inserted through another query into the shipments log database.
 
 # Criteria D: Functionality
 https://drive.google.com/drive/folders/1AqxZBVOQDglBhOh8aPGSFg3OY21M7LC6?usp=drive_link 
