@@ -36,10 +36,12 @@ The client is the manager of a clothes making factory that produces shirts in th
 <sub>**Fig.2** </sub>
 
 ## Flow Diagrams
-### Simple
+### (Simple)
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/236f3c29-6938-48d7-9751-8d93d25ba513)
 
 <sub>**Fig.3** </sub>
-### Uploading New Shipment (Medium)
+### Login Procedure (Medium)
+![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/6237cc1a-4243-4683-9132-0b9c5ae26900)
 
 
 <sub>**Fig.4** </sub>
