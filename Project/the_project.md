@@ -28,10 +28,14 @@ The client is the manager of a clothes making factory that produces luxury shirt
 ## Wireframe Diagram
 ![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/3f41eb43-509e-4f1e-96bc-3391c2fe191d)
 
+This diagram is the wireframe diagram of the application. It shows how different screens connect to each other through different buttons, and a more general flow of the applicatoin itself from the login page to the registration and then the menu or directly to the menu.
+
 <sub>**Fig.1** Figure shows the wireframe diagram of the application</sub>
 
 ## UML Diagram 
 ![image](https://github.com/Amine-Itani/Unit-3/assets/123438294/04baecc1-d71f-40c9-84d0-ca05329cbe02)
+
+The diagram is the UML diagram for the OOP classes and methods used in this program. Most of the classes inherit from the imported class MDScreen, and the general program to run the application from MDApp. DatabaseBridge is the connection between the program and the sqlite databases.
 
 <sub>**Fig.2** Figure shows the UML Diagram of the program</sub>
 
