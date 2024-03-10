@@ -9,11 +9,11 @@
 
 The client is the manager of a clothes making factory that produces luxury shirts in three different colors (red, blue, yellow). He suffers from frequent short term memory loss which causes him to forget how much money he has as well as how many shirts he has in inventory. This therefore results in losses for the factory as they take on orders they do not have the supply to meet, costing them their reputation and clients. He tried keeping track on paper, but it became tedious and inefficient, especaily because he needs a way to account for barganing, since the clothes are so luxurious they are not sold at a specific price. His short term memory loss also results in him losing his password often, which is a problem he has faced with other services in the past. Another problem he has faced with these services is passwords that are too easy to guess, which associates of his use and result in the company losing a lot of money to dataleaks and unethical hackers. Finally, since many of his associates produce goods and make sales without coordinating decisions, productions and sales get lost overtime.
 
+## Design statement
+
+I plan to develop a system for a luxury clothing factory using Python, Kivymd, and SQLite. It will provide a login and registration system to tackle privacy concerns of the client, and mutliple tables to track company production, shipments, and transactions. It will be made as client
+
 ## Proposed Solution
-
-### Design statement
-
-
 
 ## Success Criteria
 1. A page that keeps track of how much money the client has (Issue Tackled: "forget how much money he has")
