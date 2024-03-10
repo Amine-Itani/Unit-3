@@ -6,7 +6,7 @@
 
 ## Problem definition
 
-The client is the manager of a clothes making factory that produces shirts in three different colors (red, blue, yellow). He suffers from frequent short term memory loss which causes him to misplace and lose raw materials frequently, in addition to forgetting how much money he has. This therefore results in losses for the factory as they take on orders they do not have the supply to meet, costing them their reputation and clients. He also forgets the amount of materials needed to make his goods and how much they sell for, especially because there are different formulas depending on the color. This causes him to order the wrong amount of raw materials. He tried keeping track on paper, but it became tedious and inefficient.
+The client is the manager of a clothes making factory that produces luxury shirts in three different colors (red, blue, yellow). He suffers from frequent short term memory loss which causes him to forget how much money he has as well as how many shirts he has in inventory. This therefore results in losses for the factory as they take on orders they do not have the supply to meet, costing them their reputation and clients. He tried keeping track on paper, but it became tedious and inefficient, especaily because he needs a way to account for barganing, since the clothes are so luxurious they are not sold at a specific price. His short term memory loss also results in him losing his password often, which is a problem he has faced with other services in the past. Another problem he has faced with these services is passwords that are too easy to guess, which associates of his use and result in the company losing a lot of money to dataleaks and unethical hackers. Finally, since many of his associates produce goods and make sales without coordinating decisions, productions and sales get lost overtime.
 
 ## Proposed Solution
 
@@ -15,12 +15,12 @@ The client is the manager of a clothes making factory that produces shirts in th
 ``` Fill out here```
 
 ## Success Criteria
-1. A page that keeps track of how much money the client has (Issue Tackled: "forgetting how much money he has")
-2. A page that shows the current inventory of the factory (Issue Tackled: "misplace and lose raw materials")
-3. A page that allows the client to create his product (Issue Tackled: "")
-4. A cost table that shows how much raw material is needed to make each product (Issue Tackled: "forgets the amount of materials needed to make his goods")
-5. 
-6. 
+1. A page that keeps track of how much money the client has (Issue Tackled: "forget how much money he has")
+2. A page that shows the current inventory of the factory (Issue Tackled: "[forget] how many shirts his has in inventory")
+3. One page that allows the client to create his product (Issue Tackled: "his associates produce goods and makes sales without coordinating decisions")
+4. A registration system with a password policy and a hint option (Issue Tackled: losing his password, passwords are too easy to guess")
+5. A transaction table that shows all earning and losses faced by the factory (Issue Tackled: "productiond and sales get lost overtime")
+6. A shipment page that return an error if the inventory does not have enough items to meet the order and allows the user to enter the earning amount (Issue Tackled: "take on order they do not have the supply to meet, needs a way to account for barganing")
 
 
 # Criteria B: Design
