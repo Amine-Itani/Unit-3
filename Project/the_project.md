@@ -219,4 +219,4 @@ This function is executed on pre enter. What that means is right before the user
 # Criteria D: Functionality
 https://drive.google.com/drive/folders/1AqxZBVOQDglBhOh8aPGSFg3OY21M7LC6?usp=drive_link 
 
-A 7 min video demonstrating the proposed solution + additional notes with narration
+A 4 min video demonstrating the proposed solution + additional notes with narration
